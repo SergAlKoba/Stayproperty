@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0095da;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="плитка" class="cls-1" d="M1559,666h3v3h-3v-3Zm5,0h3v3h-3v-3Zm5,0h3v3h-3v-3Zm-10,5h3v3h-3v-3Zm5,0h3v3h-3v-3Zm5,0h3v3h-3v-3Zm-10,5h3v3h-3v-3Zm5,0h3v3h-3v-3Zm5,0h3v3h-3v-3Z" transform="translate(-1559 -666)"/>
+</svg>

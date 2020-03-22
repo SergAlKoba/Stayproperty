@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.407" height="17.4" viewBox="0 0 17.407 17.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="834.436" y1="9084.53" x2="828.783" y2="9067.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffda78"/>
+      <stop offset="0.191" stop-color="#f2683c"/>
+      <stop offset="0.628" stop-color="#cb2f97"/>
+      <stop offset="1" stop-color="#4b62d3"/>
+    </linearGradient>
+  </defs>
+  <path id="instagram" class="cls-1" d="M831.611,9071.36a4.465,4.465,0,1,0,4.463,4.47A4.455,4.455,0,0,0,831.611,9071.36Zm0,7.04a2.57,2.57,0,1,1,2.569-2.57A2.579,2.579,0,0,1,831.611,9078.4Zm4.3-11.28h-8.606a4.4,4.4,0,0,0-4.4,4.4v8.61a4.409,4.409,0,0,0,4.4,4.41h8.606a4.409,4.409,0,0,0,4.4-4.41v-8.61A4.407,4.407,0,0,0,835.914,9067.12Zm2.472,13.01a2.474,2.474,0,0,1-2.472,2.48h-8.606a2.479,2.479,0,0,1-2.473-2.48v-8.61a2.472,2.472,0,0,1,2.473-2.47h8.606a2.471,2.471,0,0,1,2.472,2.47v8.61Zm-2.183-9.96a1.06,1.06,0,1,1-1.06,1.06A1.063,1.063,0,0,1,836.2,9070.17Z" transform="translate(-822.906 -9067.13)"/>
+</svg>

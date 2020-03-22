@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stayproperty</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/purchase-procedure.css">
+</head>
+<body>
+
+<section class="wrapper">
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-filter-mobile">
+                <a class="filter-title" href="javascript:void(0)"><span>Фильтр поиска <i class="icon-arrow"></i></span></a>
+            </div>
+            <div class="search-filter-desc">
+                <form>
+                    <div class="search">
+                        <div class="item">
+                            <label>Тип объекта</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Комнат</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Расположение</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>ID</label>
+                            <input type="text" placeholder="--">
+                        </div>
+                        <div class="item">
+                            <label>Ценовой диапазон, $</label>
+                            <p>
+                                <span class="amount-left"></span>
+                                <span class="amount-right"></span>
+                            </p>
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="extended">
+                        <p>Расширенные параметры</p>
+                        <div class="extended-content">
+                            <div class="item">
+                                <label>Вид</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Особая категория</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Площадь, м2</label>
+                                <p>
+                                    <span class="amount-left2"></span>
+                                    <span class="amount-right2"></span>
+                                </p>
+                                <div id="slider-range2"></div>
+                            </div>
+                            <div class="item">
+                                <label>До моря м.</label>
+                                <p>
+                                    <span class="amount-left3"></span>
+                                    <span class="amount-right3"></span>
+                                </p>
+                                <div id="slider-range3"></div>
+                            </div>
+                        </div> 
+                        <div class="extended-checkbox">
+                            <label>Обязательная инфраструктура</label>
+                            <div class="checkbox-content">
+                                <ul>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="advanced-options">
+                            <a class="advanced" href="javascript:void(0)"><i class="icon-arrow"></i> расширенные параметры</a>
+                            <p><span>15  </span> результатов</p>
+                            <a class="reset" href="javascript:void(0)"><i class="icon-krestik"></i>Сбросить фильтр</a>
+                        </div>
+                        <button>поиск</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Процедура покупки</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="purchase-procedure">
+        <span class="property">prope<span>rty</span></span>
+        <div class="container">
+            <div class="procedure-item">
+                <h3>Процедура покупки и оформления недвижимости в Турции </h3>
+                <p>После окончательного принятия решения о выборе недвижимости подписывается договор купли-продажи. Он 
+                    составляется на русском и турецком языках в двух одинаковых экземплярах. Чтобы начать процедуру покупки, 
+                    достаточно иметь сумму в размере первого авансового платежа за выбранный объект, а также загранпаспорт 
+                    (допускается нотариально заверенная копия). </p>
+                <p>В договоре купли-продажи содержатся официальные данные продавца и покупателя, сведения об объекте 
+                    недвижимости, которые включают в себя технические и эксплуатационные характеристика, обязательства 
+                    сторон, условия осуществления оплаты, а также иные предусмотренные законодательством положения. По 
+                    желанию недвижимость может быть оформлена на несколько количество собственников, но не более десяти. </p>
+            </div>
+            <div class="procedure-item">
+                <h3>Требуемые документы для заключения сделки: </h3>
+                <ul>
+                    <li><i class="icon-checked"></i><strong>Документ, удостоверяющий личность (заграничный паспорт) и его ксерокопия.</strong></li>
+                </ul>
+            </div>
+            <div class="procedure-item">
+                <h3>Регистрация права собственности на недвижимость в Турции</h3>
+                <p>ТАПУ – свидетельство о праве собственности на недвижимость в Турции. Это единственный документ, который 
+                    официально подтверждает право владения и распоряжения имуществом, подтверждает передачу соответствующих 
+                    прав на объект. </p>
+                <p>Получение документа осуществляется исключительно в Земельном Кадастровом управлении. В данном учреждении 
+                    также присутствует архив, где хранятся все сведения о продавце и покупателе. </p>
+                <p>В ТАПУ содержатся сведения о собственнике, месторасположении объекта, его параметры, указывается 
+                    кадастровая стоимость недвижимость. Внизу документ имеет официальную печать по центру страницы. </p>
+                <p>ТАПУ красного цвета выдается собственникам коммерческой и жилой недвижимости (коттеджей, вилл, квартир, 
+                    апартаментов, домов). Документ о праве собственности на земельные участки имеет голубой цвет. </p>
+            </div>
+            <div class="procedure-item">
+                <h3>Порядок и сроки получения ТАПУ </h3>
+                <p>В среднем процесс оформления права собственности на недвижимость в Турции и получение соответствующих 
+                    документов занимает три рабочих дня. Наши специалисты помогут с комфортом и в кратчайшие сроки пройти 
+                    данную процедуру. </p>
+            </div>
+            <div class="procedure-item">
+                <h3>Порядок действий: </h3>
+                <ul>
+                    <li><i class="icon-checked"></i><strong>Присвоение и получение турецкого ИНН. </strong> Прохождение 
+                        процедуры осуществляется бесплатно, присвоение и выдача производится в день обращения. Данный 
+                        документ потребуется для последующего открытия расчётного счета в местном банке, а также получения 
+                        ВНЖ в Турции, оплаты установленных законодательством сборов и налогов. </li>
+                    <li><i class="icon-checked"></i><strong>Получение результатов независимой экспертизы, </strong> целью 
+                        которой является оценка приобретаемой в собственность недвижимости. Данный документ также помогут 
+                        подготовить и получить специалисты нашей компании. </li>
+                </ul>
+                <p>Процедура перехода права собственности к новому владельцу недвижимости осуществляется в Кадастровом 
+                    управлении. Обязательно присутствие как продавца, так и покупателя (либо их доверенных лиц), а также 
+                    уполномоченного переводчика. </p>
+            </div>
+            <div class="procedure-item">
+                <h3>Затраты на оформление недвижимости в Турции:</h3>
+                <div class="causes-slider">
+                    <div class="item">
+                        <div class="causes-item">
+                            <span class="icon">
+                                <i>-01</i>
+                                <img src="../img/causes-icon6.png" alt="">
+                                <span></span>
+                            </span>
+                            <div class="text">
+                                <p><strong>Кадастровые сборы. </strong> Оплачиваются при подаче документов. Размер составляет 
+                                    от 200 до 500 евро в зависимости от указанной в документах стоимости недвижимого 
+                                    объекта. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="causes-item">
+                            <span class="icon">
+                                <i>-02</i>
+                                <img src="../img/causes-icon7.png" alt="">
+                                <span></span>
+                            </span>
+                            <div class="text">
+                                <p><strong>Экспертная оценка. </strong> В настоящее время, когда покупателем или продавцом 
+                                    недвижимости является иностранец, необходимо провести экспертную оценку приобретаемого 
+                                    объекта недвижимости, которая определит ее кадастровую стоимость. Расходы на экспертную 
+                                    оценку недвижимости составят примерно 200 евро. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="causes-item">
+                            <span class="icon">
+                                <i>-03</i>
+                                <img src="../img/causes-icon8.png" alt="">
+                                <span></span>
+                            </span>
+                            <div class="text">
+                                <p><strong>Налоги. </strong> Налог на недвижимость при оформлении договора купли-продажи 
+                                    оплачивается покупателем, составляет 4% от суммы, которая указана в независимом экспертном
+                                     отчете. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="causes-item">
+                            <span class="icon">
+                                <i>-04</i>
+                                <img src="../img/causes-icon9.png" alt="">
+                                <span></span>
+                            </span>
+                            <div class="text">
+                                <p><strong>Услуги переводчика. </strong> Дополнительно оплачиваются услуги присяжного 
+                                    переводчика. Размер оплаты составляет 100 евро. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Для регистрации права собственности и оформления документа требуется предоставить турецкий ИНН, 
+                    загранпаспорт. Новому собственнику также потребуется оформить соответствующие дополнительные 
+                    документы, к которым относится страхование DASK, оформление технического паспорта на объект 
+                    недвижимости. Необходимо также пройти процедуру регистрации счетчиков электричества и воды. Для 
+                    упрощения последующей процедуры оплаты счетов на коммунальные и иные услуги рекомендуется открыть 
+                    в местном банке счет. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions">
+        <span class="stay">stay</span>
+        <div class="container">
+            <div class="questions-content">
+                <div class="questions-order">
+                <div class="title">
+                    <h3>Остались вопросы?</h3>
+                    <p>Закажите консультацию у опытных менеджеров, которые помогут Вам во всех вопросах.</p>
+                </div>
+                <ul>
+                    <li><a class="bell request_js" href="javascriot:void(0)">заказать звонок</a></li>
+                    <li><a class="question question_js" href="javascriot:void(0)">задать вопрос</a></li>
+                </ul>
+                </div>
+                <div class="questions-manager">
+                    <h4>Выберите своего менеджера</h4>
+                    <div class="manager-slider">
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+</section>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/jcf.select.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.min.js"></script>
+<script src="../js/jquery.matchHeight.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/purchase-procedure.min.js"></script>
+</body>
+</html>
+

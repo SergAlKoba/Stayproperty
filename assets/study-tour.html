@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stayproperty</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/study-tour.css">
+</head>
+<body>
+
+<section class="wrapper">
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-filter-mobile">
+                <a class="filter-title" href="javascript:void(0)"><span>Фильтр поиска <i class="icon-arrow"></i></span></a>
+            </div>
+            <div class="search-filter-desc">
+                <form>
+                    <div class="search">
+                        <div class="item">
+                            <label>Тип объекта</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Комнат</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Расположение</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>ID</label>
+                            <input type="text" placeholder="--">
+                        </div>
+                        <div class="item">
+                            <label>Ценовой диапазон, $</label>
+                            <p>
+                                <span class="amount-left"></span>
+                                <span class="amount-right"></span>
+                            </p>
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="extended">
+                        <p>Расширенные параметры</p>
+                        <div class="extended-content">
+                            <div class="item">
+                                <label>Вид</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Особая категория</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Площадь, м2</label>
+                                <p>
+                                    <span class="amount-left2"></span>
+                                    <span class="amount-right2"></span>
+                                </p>
+                                <div id="slider-range2"></div>
+                            </div>
+                            <div class="item">
+                                <label>До моря м.</label>
+                                <p>
+                                    <span class="amount-left3"></span>
+                                    <span class="amount-right3"></span>
+                                </p>
+                                <div id="slider-range3"></div>
+                            </div>
+                        </div> 
+                        <div class="extended-checkbox">
+                            <label>Обязательная инфраструктура</label>
+                            <div class="checkbox-content">
+                                <ul>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="advanced-options">
+                            <a class="advanced" href="javascript:void(0)"><i class="icon-arrow"></i> расширенные параметры</a>
+                            <p><span>15  </span> результатов</p>
+                            <a class="reset" href="javascript:void(0)"><i class="icon-krestik"></i>Сбросить фильтр</a>
+                        </div>
+                        <button>поиск</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Ознакомительный тур</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="study-tour">
+        <span class="property">prope<span>rty</span></span>
+        <div class="container">
+            <h3>Ознакомительный тур с Stay Property</h3>
+            <div class="text">
+                <p><strong>Если вы хотите купить квартиру, дом или коммерческую недвижимость в Турции, рекомендуем обратить 
+                    внимание на инфо-тур от компании STAY PROPERTY. </strong></p>
+                <p>Ознакомительная поездка позволяет лично посмотреть и оценить возможности инвестиций в турецкую 
+                    недвижимость, ознакомиться с объектами и остановиться на варианте, который в полной мере соответствует 
+                    индивидуальным пожеланиям. В офисе компании вас подробно проконсультируют по всем вопросам, предоставят 
+                    полный сервис необходимых услуг. </p>
+                <a class="study_js" href="javascript:void(0)">заказать бесплатный тур</a>
+            </div>
+            <div class="img" style="background: url('../img/study-tour-img.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+        </div>
+    </section>
+
+    <section class="why-go">
+        <div class="container">
+            <h3><span>Почему стоит поехать </span> в ознакомительный тур с STAY PROPERTY? </h3>
+            <div class="text">
+                <p>STAY PROPERTY – агентство недвижимости и застройщик в одном лице. Нашим клиентам мы предлагаем максимально 
+                    прозрачные условия ознакомительного тура, самые низкие цены на недвижимость. В базе представлены объекты 
+                    первичного и вторичного рынка на любой бюджет и вкус, что позволяет выбрать решение с учетом всех 
+                    индивидуальных пожеланий клиента.  </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="does-go">
+        <div class="container">
+            <h3>Как проходит инфо-тур STAY PROPERTY?</h3>
+            <div class="does-go-slider">
+                <div class="does-go-for">
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                    <div>
+                        <div class="img" style="background: url('../img/does-go-for-img.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                    </div>
+                </div>
+                <div class="does-go-nav">
+                    <div>
+                        <span class="step">Шаг 1 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 2 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 3 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 4 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 5 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 6 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 7 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="step">Шаг 8 из 8</span>
+                        <div class="text">
+                            <h4><i class="icon-checked"></i>Запрос</h4>
+                            <p>Вам нужно отправить запрос на проведение инфо-тура. Менеджер подготовит подборку объектов, 
+                                ответит на все вопросы, а также подберет удобные даты поездки. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conditions">
+        <div class="container">
+            <h3>Условия ознакомительного тура</h3>
+            <div class="conditions-slider">
+                <div class="conditions-item">
+                    <i class="icon-checked"></i><strong>Авиабилеты. </strong> 
+                    <p>Авиабилеты приобретаются заказчиком 
+                        самостоятельно до аэропорта Газипаша или Анталья. Мы предлагаем самые низкие цены на недвижимость, не 
+                        закладываем стоимость перелета в стоимость объекта, предоставляя максимально прозрачные условия 
+                        сотрудничества.</p>
+                </div>
+                <div class="conditions-item">
+                    <i class="icon-checked"></i><strong>Инфо-тур бесплатно. </strong> 
+                    <p>Для клиентов компании услуга 
+                        ознакомительного тура предоставляется бесплатно, если по его результатам заключен договор купли-продажи 
+                        недвижимости. Вы можете выбрать объекты, предлагаемые компанией, на первичном или вторичном рынке, 
+                        доступна рассрочка платежей. Если договор купли-продажи не был заключен, стоимость ознакомительного 
+                        тура 300 евро.</p>
+                </div>
+                <div class="conditions-item">
+                    <i class="icon-checked"></i><strong>Продолжительность тура 3 ночи/4 дня. </strong> 
+                    <p>Продолжительность 
+                        стандартного ознакомительного тура составляет 3 дня и четыре ночи. В соответствии с индивидуальными 
+                        потребностями и запросом клиента продолжительность тура может быть увеличена. </p>
+                </div>
+                <div class="conditions-item">
+                    <i class="icon-checked"></i><strong>Полное сопровождение. </strong> 
+                    <p>Компания предоставляет полный 
+                        комплекс услуг в области юридического и сервисного сопровождения. Специалисты помогут в кратчайшие 
+                        сроки оформить недвижимость в собственность в соответствии с законами Турции.</p>
+                </div>
+                <div class="conditions-item">
+                    <i class="icon-checked"></i><strong>Гибкие схемы оплаты. </strong> 
+                    <p>В зависимости от пожеланий вся сумма 
+                        может быть оплачена сразу в офисе компании или же внесена предоплата. Компания предоставляет услуги 
+                        рассрочки. После полной оплаты недвижимости требуется повторный приезд клиента в страну для получения 
+                        ТАПУ. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="information">
+        <div class="container">
+            <h6>Для получения дополнительной информации об ознакомительном туре вы можете <strong>связаться с менеджерами 
+                нашей компании по указанным на сайте телефонам. Либо заполнить форму ниже.</strong></h6>
+            <form>
+                <div class="input">
+                    <label>Введите ваше имя</label>
+                    <input type="text">
+                    <label>Ваша почта</label>
+                    <input type="text">
+                    <label>Введите ваш телефон</label>
+                    <input type="text" class="phone">
+                </div>
+                <div class="textarea">
+                    <div class="persons">
+                        <div class="data">
+                            <label>Дата посещения</label>
+                            <input type='text' class="datepicker-here" placeholder="Прибытие" />
+                            <input type='text' class="datepicker-here" placeholder="Возвращение" />
+                        </div>
+                        <div class="number">
+                            <label>Количество персон</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <textarea placeholder="Пожалуйста ,впишите номер(а) ID недвижимости, которую хотите просмотреть"></textarea>
+                </div>
+                <div class="button">
+                    <button>задать вопрос</button>
+                    <label><input type="checkbox"> Я даю согласие на обработку <a href="javascript:void(0)">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="questions">
+        <span class="stay">stay</span>
+        <div class="container">
+            <div class="questions-content">
+                <div class="questions-order">
+                <div class="title">
+                    <h3>Остались вопросы?</h3>
+                    <p>Закажите консультацию у опытных менеджеров, которые помогут Вам во всех вопросах.</p>
+                </div>
+                <ul>
+                    <li><a class="bell request_js" href="javascriot:void(0)">заказать звонок</a></li>
+                    <li><a class="question question_js" href="javascriot:void(0)">задать вопрос</a></li>
+                </ul>
+                </div>
+                <div class="questions-manager">
+                    <h4>Выберите своего менеджера</h4>
+                    <div class="manager-slider">
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+</section>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/jcf.select.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/jquery.matchHeight.min.js"></script>
+<script src="../js/datepicker.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/study-tour.min.js"></script>
+</body>
+</html>
+

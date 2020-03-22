@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stayproperty</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/our-partners.css">
+</head>
+<body>
+
+<section class="wrapper">
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-filter-mobile">
+                <a class="filter-title" href="javascript:void(0)"><span>Фильтр поиска <i class="icon-arrow"></i></span></a>
+            </div>
+            <div class="search-filter-desc">
+                <form>
+                    <div class="search">
+                        <div class="item">
+                            <label>Тип объекта</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Комнат</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Расположение</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>ID</label>
+                            <input type="text" placeholder="--">
+                        </div>
+                        <div class="item">
+                            <label>Ценовой диапазон, $</label>
+                            <p>
+                                <span class="amount-left"></span>
+                                <span class="amount-right"></span>
+                            </p>
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="extended">
+                        <p>Расширенные параметры</p>
+                        <div class="extended-content">
+                            <div class="item">
+                                <label>Вид</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Особая категория</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Площадь, м2</label>
+                                <p>
+                                    <span class="amount-left2"></span>
+                                    <span class="amount-right2"></span>
+                                </p>
+                                <div id="slider-range2"></div>
+                            </div>
+                            <div class="item">
+                                <label>До моря м.</label>
+                                <p>
+                                    <span class="amount-left3"></span>
+                                    <span class="amount-right3"></span>
+                                </p>
+                                <div id="slider-range3"></div>
+                            </div>
+                        </div> 
+                        <div class="extended-checkbox">
+                            <label>Обязательная инфраструктура</label>
+                            <div class="checkbox-content">
+                                <ul>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="advanced-options">
+                            <a class="advanced" href="javascript:void(0)"><i class="icon-arrow"></i> расширенные параметры</a>
+                            <p><span>15  </span> результатов</p>
+                            <a class="reset" href="javascript:void(0)"><i class="icon-krestik"></i>Сбросить фильтр</a>
+                        </div>
+                        <button>поиск</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Наши партнеры</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="company">
+        <div class="container">
+            <div class="title">
+                <h3>Компания STAY PROPERTY</h3>
+            </div>
+            <div class="company-content">
+                <div class="company-slider">
+                    <div>
+                        <img src="../img/company-img.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../img/company-img.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../img/company-img.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../img/company-img.png" alt="">
+                    </div>
+                </div>
+                <div class="company-text">
+                    <p><strong>Компания STAY PROPERTY </strong> – агентство недвижимости полного цикла и застройщик в едином 
+                        лице. Вам будет предложен полный спектр профессиональных услуг в области продажи недвижимости в 
+                        разных регионах Турции, самые низкие цены и большой выбор объектов на первичном и вторичном 
+                        рынках.</p>
+                    <p><strong>Основной принцип нашей работы </strong> – всегда действовать в интересах клиента. Обращаясь к 
+                        специалистам STAY PROPERTY, вы можете быть уверены, что вам предложат лучший сервис, наиболее 
+                        привлекательную с точки зрения инвестиций и комфорта проживания недвижимость. </p>
+                    <a href="javascript:void(0)">подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offices">
+        <div class="container">
+            <div class="title">
+                <h3>Наши партнеры</h3>
+                <div class="title-contact">
+                    <p>Выбрать своего партнера по ригиону</p>
+                    <ul class="choose-city">
+                        <li>
+                            <a href="javascript:void(0)">Выбрать город</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Москва</a></li>
+                                <li><a href="javascript:void(0)">Киев</a></li>
+                                <li><a href="javascript:void(0)">Алматы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="office-slider">
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li></li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li></li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li></li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="item">
+                        <div class="img" style="background: url('../img/office-item-img.jpg') no-repeat 50% 0; background-size: cover;">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
+                                    viverra. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Рамиль Мансуров</h4>
+                            <p>Партнер Stay Property</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-whatsapp whatsapp"></i><i class="icon-viber viber"></i>+90-242-513-7829</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="icon-telegram201 telegram"></i>+90-242-513-7829</a>
+                                </li>
+                            </ul>
+                            <ul class="email">
+                                <li><a href="mailto:info@stayproperty.com"><i class="icon-letter"></i>info@stayproperty.com</a></li>
+                                <li><span><i class="icon-subject"></i>русский, турецкий</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="property-in">
+        <div class="container">
+            <div class="title">
+                <h3>Недвижимость в Турции <a href="javascript:void(0)"><img src="../img/property-title-img.png" alt=""></a></h3>
+                <p><strong>Добро пожаловать на Alanya TV</strong> – самый креативный канал о недвижимости, жизни, бизнесе и 
+                    инвестициях в Алании (Турция)! Мы стараемся создавать свой контент так, как этого еще никто до нас не 
+                    делал. </p>
+            </div>
+            <div class="property-content">
+                <div class="property-slider">
+                    <div>
+                        <div class="property-item">
+                            <div class="video play" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" style="background: url('../img/property-item-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <ul>
+                                <li>6 510 просмотров</li>
+                                <li>3 дня назад</li>
+                            </ul>
+                            <h4>СРОЧНАЯ ПРОДАЖА! ДУПЛЕКС 2+1 ЗА 69 000 евро! Махмутлар. Недвижимость в Турции. Алания</h4>
+                            <p>Связаться с нами в один клик через Whatsapp - <a href="javascript:coid(0)">http://wa.me/79251654686</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="property-item">
+                            <div class="video play" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" style="background: url('../img/property-item-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <ul>
+                                <li>6 510 просмотров</li>
+                                <li>3 дня назад</li>
+                            </ul>
+                            <h4>Лучшая локация в Махмутларе. Квартира для семьи 2+1. Недвижимость в Турции</h4>
+                            <p>Связаться с нами в один клик через Whatsapp - <a href="javascript:coid(0)">http://wa.me/79251654686</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="property-item">
+                            <div class="video play" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" style="background: url('../img/property-item-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <ul>
+                                <li>6 510 просмотров</li>
+                                <li>3 дня назад</li>
+                            </ul>
+                            <h4>СРОЧНАЯ ПРОДАЖА! ДУПЛЕКС 2+1 ЗА 69 000 евро! Махмутлар. Недвижимость в Турции. Алания</h4>
+                            <p>Связаться с нами в один клик через Whatsapp - <a href="javascript:coid(0)">http://wa.me/79251654686</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="property-item">
+                            <div class="video play" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" style="background: url('../img/property-item-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <ul>
+                                <li>6 510 просмотров</li>
+                                <li>3 дня назад</li>
+                            </ul>
+                            <h4>СРОЧНАЯ ПРОДАЖА! ДУПЛЕКС 2+1 ЗА 69 000 евро! Махмутлар. Недвижимость в Турции. Алания</h4>
+                            <p>Связаться с нами в один клик через Whatsapp - <a href="javascript:coid(0)">http://wa.me/79251654686</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="property-item">
+                            <div class="video play" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" style="background: url('../img/property-item-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <ul>
+                                <li>6 510 просмотров</li>
+                                <li>3 дня назад</li>
+                            </ul>
+                            <h4>Лучшая локация в Махмутларе. Квартира для семьи 2+1. Недвижимость в Турции</h4>
+                            <p>Связаться с нами в один клик через Whatsapp - <a href="javascript:coid(0)">http://wa.me/79251654686</a></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="more" href="javascript:void(0)">ПОСМОТРЕТЬ ЕЩЕ</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="become-partner">
+        <div class="title" style="background: url('../img/become-partner-bg.jpg') no-repeat 50% 50%; background-size: cover;">
+            <div class="text">
+                <h2>Стать партнером в нашей компании просто</h2>
+                <a class="fill_js" href="javascript:void(0)">заполните форму</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+</section>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/jcf.select.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.min.js"></script>
+<script src="../js/jquery.matchHeight.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/our-partners.min.js"></script>
+</body>
+</html>
+

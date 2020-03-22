@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stayproperty</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/internal-object.css">
+</head>
+<body>
+
+<section class="wrapper">
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+    
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-filter-mobile">
+                <a class="filter-title" href="javascript:void(0)"><span>Фильтр поиска <i class="icon-arrow"></i></span></a>
+            </div>
+            <div class="search-filter-desc">
+                <form>
+                    <div class="search">
+                        <div class="item">
+                            <label>Тип объекта</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Комнат</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                    <option>Любое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Расположение</label>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                    <option>Алания (центр)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>ID</label>
+                            <input type="text" placeholder="--">
+                        </div>
+                        <div class="item">
+                            <label>Ценовой диапазон, $</label>
+                            <p>
+                                <span class="amount-left"></span>
+                                <span class="amount-right"></span>
+                            </p>
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="extended">
+                        <p>Расширенные параметры</p>
+                        <div class="extended-content">
+                            <div class="item">
+                                <label>Вид</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                        <option>Любой</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Особая категория</label>
+                                <div class="select">
+                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                        <option>Только с мебелью</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <label>Площадь, м2</label>
+                                <p>
+                                    <span class="amount-left2"></span>
+                                    <span class="amount-right2"></span>
+                                </p>
+                                <div id="slider-range2"></div>
+                            </div>
+                            <div class="item">
+                                <label>До моря м.</label>
+                                <p>
+                                    <span class="amount-left3"></span>
+                                    <span class="amount-right3"></span>
+                                </p>
+                                <div id="slider-range3"></div>
+                            </div>
+                        </div> 
+                        <div class="extended-checkbox">
+                            <label>Обязательная инфраструктура</label>
+                            <div class="checkbox-content">
+                                <ul>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Аквапарк</label></li>
+                                    <li><label><input type="checkbox">Бар у бассейна</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                    <li><label><input type="checkbox">Беседки для отдыха</label></li>
+                                    <li><label><input type="checkbox">Видеонаблюдение</label></li>
+                                    <li><label><input type="checkbox">Баскетбольная площадка</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="advanced-options">
+                            <a class="advanced" href="javascript:void(0)"><i class="icon-arrow"></i> расширенные параметры</a>
+                            <p><span>15  </span> результатов</p>
+                            <a class="reset" href="javascript:void(0)"><i class="icon-krestik"></i>Сбросить фильтр</a>
+                        </div>
+                        <button>поиск</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Недвижимость</a></li>
+                <li><span>P044B – RUBY SUITE RESIDENCE</span></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="internal-object">
+        <div class="container">
+            <div class="object-content">
+                <div class="object-foto">
+                    <h3>P044B – RUBY SUITE RESIDENCE</h3>
+                    <div class="foto-filter">
+                        <span>Превью:</span>
+                        <div>
+                            <p class="filter-title"></p>
+                            <ul>
+                                <li data-slider="sider1" class="active">Фото объекта</li>
+                                <li data-slider="sider2">Вид из окон</li>
+                                <li data-slider="sider3">Планировка</li>
+                                <li data-slider="sider4">Интерьер</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foto-slider">
+                        <div>
+                            <img src="../img/foto-slider-img.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../img/foto-slider-img.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../img/foto-slider-img.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../img/foto-slider-img.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../img/foto-slider-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="object-description">
+                    <div class="print-share">
+                        <a class="print" href="javascrit:void(0)"><i class="icon-printer"></i>Распечатать</a>
+                        <p class="forward-mobile"><i class="icon-forward"></i>Поделиться</p>
+                        <div class="share">
+                            <p><i class="icon-forward"></i>Поделиться</p>
+                            <ul>
+                                <li><a href="javascrit:void(0)"><i class="icon-instagram"></i></a></li>
+                                <li><a href="javascrit:void(0)"><i class="icon-facebook"></i></a></li>
+                                <li><a href="javascrit:void(0)"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="javascrit:void(0)"><i class="icon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <a href="javascript:void(0)"><i class="icon-location"></i> Каргыджак, Алания</a>
+                        <strong>ID: З0001</strong>
+                    </div>
+                    <div class="description">
+                        <div class="apartment">
+                            <div class="apartment-items">
+                                <div class="apartment-item">
+                                    <i class="icon-house2"></i>
+                                    <span>Тип: </span>
+                                    <p>Дуплекс / Пентхаус, Новостройки</p>
+                                </div>
+                                <div class="apartment-item">
+                                    <i class="icon-area"></i>
+                                    <span>Площадь</span>
+                                    <p>250 м2</p>
+                                </div>
+                                <div class="apartment-item">
+                                    <i class="icon-home"></i>
+                                    <span>Комнат:</span>
+                                    <p>5+1</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a></li>
+                                <li><a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="infrastructure">
+                            <h5>Инфраструктура объекта</h5>
+                            <ul>
+                                <li><i class="icon-checked"></i>Зеленый сад</li>
+                                <li><i class="icon-checked"></i>Беспроводной интернет</li>
+                                <li><i class="icon-checked"></i>Спутниковое ТВ</li>
+                                <li><i class="icon-checked"></i>Открытая парковка</li>
+                                <li><i class="icon-checked"></i>Басейн</li>
+                                <li><i class="icon-checked"></i>Фитнес зал</li>
+                                <li><i class="icon-checked"></i>Огороженная территория</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="object-sum-help">
+                <div class="sum">
+                    <p>стоимость за м2 1500 $</p>
+                    <div class="sum-content">
+                        <strong>Цена от 48 000 </strong>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>$</option>
+                                <option>$</option>
+                                <option>$</option>
+                                <option>$</option>
+                                <option>$</option>
+                                <option>$</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li><a class="estate_js" href="javascript:void(0)">помощь в подборе недвижимости</a></li>
+                        <li><a class="download_js" href="javascript:void(0)">получить прайс</a></li>
+                        <li><a class="study_js" href="javascript:void(0)">бесплатный тур</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specifications">
+        <div class="container">
+            <ul class="tabs-link">
+                <li data-tab="tabs-item1" class="active"><a href="javascritp:void(0)">Описание</a></li>
+                <li data-tab="tabs-item2"><a href="javascritp:void(0)">Дополнительные характеристики</a></li>
+            </ul>
+            <div class="tabs-text">
+                <div class="tabs-item tabs-item1 active">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
+                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                        dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div class="tabs-item tabs-item2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
+                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                        dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-review">
+        <div class="container">
+            <div class="video-content">
+                <div class="title">
+                    <h3>Видеообзор данного объекта:</h3>
+                </div>
+                <div class="video" style="background: url('../img/video-review-bg.jpg') no-repeat 50% 50%; background-size: cover;">
+                    <span class="play"></span>
+                </div>
+            </div>
+            <div class="video-form">
+                <h4>Вероятность получения ипотеки <span> с нами 98%</span></h4>
+                <form>
+                    <div class="input">
+                        <label>Введите ваше имя</label>
+                        <input type="text">
+                        <label>Введите ваш телефон</label>
+                        <input type="text" class="phone">
+                        <div class="input-select">
+                            <label>Сумма ипотеки</label>
+                            <input type="text">
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                    <option>$</option>
+                                    <option>$</option>
+                                    <option>$</option>
+                                    <option>$</option>
+                                    <option>$</option>
+                                    <option>$</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>Срок кредитования</label>
+                        <input type="text" placeholder="1 год">
+                    </div>
+                    <div class="button">
+                        <button>получить предложение</button>
+                        <label><input type="checkbox"> Я даю согласие на обработку <a href="javascript:void(0)">персональных данных</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <section class="questions">
+        <span class="stay">stay</span>
+        <div class="container">
+            <div class="title">
+                <h3>Остались вопросы?</h3>
+                <p>Закажите консультацию у опытных менеджеров, которые помогут Вам во всех вопросах.</p>
+            </div>
+            <div class="questions-content">
+                <div class="questions-manager">
+                    <h4>Выберите своего менеджера</h4>
+                    <div class="manager-slider">
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="manager-item">
+                                <div class="img">
+                                    <img src="../img/manager-img1.jpg" alt="" class="mobile">
+                                    <img src="../img/manager-img2.jpg" alt="" class="desc">
+                                </div>
+                                <div class="text">
+                                    <h5>Имя Фамилия</h5>
+                                    <p>должность</p>
+                                    <div class="social-tel">
+                                        <ul class="social">
+                                            <li><a class="viber" href="javascript:void(0)"><i class="icon-viber"></i></a></li>
+                                            <li><a class="whats" href="javascript:void(0)"><i class="icon-whatsapp"></i></a></li>
+                                            <li><a class="teleg" href="javascript:void(0)"><i class="icon-telegram201"></i></a></li>
+                                        </ul>
+                                        <a class="tel" href="tel:+90-242-513-7829">+90-242-513-7829</a>
+                                    </div>
+                                    <ul class="email">
+                                        <li><i class="icon-letter"></i><a href="mailto:info@stayproperty.com">info@stayproperty.com</a></li>
+                                        <li><i class="icon-subject"></i>русский, турецкий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-form">
+                    <form>
+                        <div class="input">
+                            <label>Введите ваше имя</label>
+                            <input type="text">
+                            <label>Введите ваш телефон</label>
+                            <input type="text" class="phone">
+                            <label>Введите вашу почту</label>
+                            <input type="text">
+                        </div>
+                        <div class="textarea">
+                            <textarea placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="button">
+                            <button>задать вопрос</button>
+                            <label><input type="checkbox"> Я даю согласие на обработку <a href="javascript:void(0)">персональных данных</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="properties">
+        <div class="container">
+            <div class="title">
+                <h2>Похожие объекты</h2>
+            </div>
+            <div class="properties-content">
+                <div class="properties-slider">
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img3.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="objects-item">
+                            <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                            </div>
+                            <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                            <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                            <div class="item-text">
+                                <ul class="description">
+                                    <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                    <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                </ul>
+                                <ul class="sum">
+                                    <li><i>50 000 $</i></li>
+                                    <li><strong>от 48 000 $</strong></li>
+                                    <li>1500 $/м2</li>
+                                </ul>
+                            </div>
+                            <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+</section>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/jcf.select.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.min.js"></script>
+<script src="../js/jquery.matchHeight.min.js"></script>
+<script src="../js/jquery.responsiveTabs.min.js"></script>
+<script src="../js/readmore.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/internal-object.min.js"></script>
+</body>
+</html>
+
