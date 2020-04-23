@@ -1,6 +1,7 @@
 @import "libs/slick";
 
 .search-filter{
+    z-index: 5;
     position: relative;
     padding: 112px 0 10px;
     &::after{
@@ -537,7 +538,7 @@
                 }
                 .share{
                     width: 100%;
-                    p{
+                    .share-link{
                         display: none;
                     }
                     ul{
@@ -1927,7 +1928,7 @@
         }
         .share{
             width: 100%;
-            p{
+            .share-link{
                 display: none;
             }
             ul{
@@ -3770,7 +3771,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
-                        p{
+                        .share-link{
                             display: block;
                             color: #828282;
                             font-size: 14px;
@@ -3937,7 +3938,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                p{
+                .share-link{
                     display: block;
                     color: #828282;
                     font-size: 14px;
@@ -3990,8 +3991,8 @@
                 position: relative;
                 margin-bottom: 40px;
                 .presentation-filter{
-                    top: 46%;
-                    left: -32%;
+                    top: 21%;
+                    left: -16%;
                     z-index: 2;
                     display: flex;
                     margin-bottom: 0;
@@ -4020,9 +4021,6 @@
                                 position: relative;
                                 padding-bottom: 10px;
                                 display: inline-block;
-                                &:first-child{
-                                    margin-left: 0;
-                                }
                                 &:last-child{
                                     margin-right: 0;
                                 }
@@ -4575,8 +4573,8 @@
                     line-height: 32px;
                 }
                 .presentation-filter {
-                    top: 52%;
-                    left: -24%;
+                    top: 23%;
+                    left: -13%;
                 }
                 .presentation-slider {
                     width: 75%;
@@ -5201,8 +5199,8 @@
             .presentation-foto{
                 margin-bottom: 40px;
                 .presentation-filter {
-                    top: 41%;
-                    left: -19%;
+                    top: 16%;
+                    left: -10%;
                 }
                 .presentation-slider {
                    .slick-arrow {
@@ -5549,7 +5547,7 @@
                         padding-left: 44px;
                     }
                     .share {
-                        p{
+                        .share-link{
                             font-size: 12px;
                         }
                         ul {
@@ -5883,7 +5881,7 @@
                 padding-left: 44px;
             }
             .share {
-                p{
+                .share-link{
                     font-size: 12px;
                 }
                 ul {
@@ -5965,8 +5963,8 @@
                 padding-right: 22px;
                 margin-bottom: 48px;
                 .presentation-filter {
-                    top: 39%;
-                    left: -18.4%;
+                    top: 18%;
+                    left: -10%;
                     div {
                         ul {
                             li {
@@ -6368,7 +6366,7 @@
                 padding: 0 115px 0 0;
                 .manager-item{
                     .text {
-                        width: 315px;
+                        width: 330px;
                         margin-top: 34px;
                         padding-left: 23px;
                         p {

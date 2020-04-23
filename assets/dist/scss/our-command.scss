@@ -1,6 +1,7 @@
 @import "libs/slick";
 
 .search-filter{
+    z-index: 5;
     position: relative;
     padding: 112px 0 10px;
     &::after{
@@ -464,6 +465,7 @@
 }
 
 .offices{
+    z-index: 5;
     position: relative;
     margin-bottom: 27px;
     padding: 18px 0 56px;

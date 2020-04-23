@@ -302,7 +302,9 @@
 }
 
 .search-filter{
+    z-index: 5;
     margin: 22px 0;
+    position: relative;
     .search-filter-mobile{
         text-align: center;
         padding: 38px 10px 40px;
@@ -5263,7 +5265,7 @@
                 padding: 0 115px 0 0;
                 .manager-item{
                     .text {
-                        width: 315px;
+                        width: 330px;
                         margin-top: 34px;
                         padding-left: 23px;
                         p {

@@ -1,7 +1,7 @@
 @import "libs/slick";
 
 .search-filter{
-    z-index: 3;
+    z-index: 5;
     position: relative;
     padding: 112px 0 10px;
     &::after{
@@ -1652,7 +1652,7 @@
                 padding: 0 115px 0 0;
                 .manager-item{
                     .text {
-                        width: 315px;
+                        width: 330px;
                         margin-top: 34px;
                         padding-left: 23px;
                         p {

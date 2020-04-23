@@ -61,14 +61,17 @@ $(document).ready(function(){
 
       $('.cloze').on('click', function(){
         $('.popup').removeClass('active');
+        $('.popup-video').find('iframe').attr('src', '');
       });
       
       $('.cloze-popup').on('click', function(){
         $('.popup').removeClass('active');
+        $('.popup-video').find('iframe').attr('src', '');
       });
 
       $('.cloze-linc').on('click', function(){
         $('.popup').removeClass('active');
+        $('.popup-video').find('iframe').attr('src', '');
       });
 
       $('.thanks_js').on('click', function(){

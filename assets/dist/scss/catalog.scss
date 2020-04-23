@@ -1,6 +1,7 @@
 @import "libs/slick";
 
 .search-filter{
+    z-index: 5;
     position: relative;
     padding: 112px 0 10px;
     &::after{
@@ -427,15 +428,17 @@
                     }
                     li{
                         a{
-                            color: #0095da;
+                            width: 140px;
+                            display: block;
                             font-size: 14px;
+                            color: #0095da;
                             font-weight: 400;
-                            overflow: hidden; 
+                            overflow: hidden;
                             line-height: 24px;
                             position: relative;
                             padding-right: 10px;
                             white-space: nowrap;
-                            text-overflow: ellipsis; 
+                            text-overflow: ellipsis;
                             i{
                                 top: 50%;
                                 right: 0;
@@ -2680,7 +2683,7 @@
                 padding: 0 115px 0 0;
                 .manager-item{
                     .text {
-                        width: 315px;
+                        width: 330px;
                         margin-top: 34px;
                         padding-left: 23px;
                         p {
