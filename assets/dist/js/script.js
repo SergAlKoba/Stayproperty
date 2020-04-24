@@ -11,6 +11,7 @@ $(document).ready(function(){
         range: true,
         min: 0,
         max: 30000,
+        step: 1000,
         values: [ 2800, 25000 ],
         slide: function( event, ui ) {
           $( ".amount-left" ).text( ui.values[ 0 ] );

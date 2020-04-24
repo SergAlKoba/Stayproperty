@@ -12,6 +12,7 @@ $(document).ready(function(){
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         nextArrow: '<button class="slick-arrow next"><i class="icon-strelka"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-strelkaleft"></i></button>',
     });
