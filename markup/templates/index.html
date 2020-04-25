@@ -897,15 +897,17 @@
                 </div>
                 <div class="new-objects-content">
                     <div class="objectsTabs">
-                        <ul>
-                            <li><a href="#tab-1"> Stay Property – наши проекты </a></li>
-                            <li><a href="#tab-2"> Горящее предложение недели </a></li>
+                        <ul class="r-tabs-nav">
+                            <li class="r-tabs-tab r-tabs-state-active"><a class="r-tabs-anchor" href="javascript:void(0)"> Stay Property – наши проекты </a></li>
+                            <li class="r-tabs-tab"><a class="r-tabs-anchor" href="catalog.html"> Горящее предложение недели </a></li>
+                            <!-- Должна вести на котолог -->
                         </ul>
-                        <div id="tab-1">
+                        <div id="tab-1" class="r-tabs-panel">
                             <div class="new-objects-slider">
                                 <div class="item">
                                     <div class="objects-item">
                                         <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                            <span class="sold">sold</span>
                                             <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
                                             <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
                                             <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
@@ -1040,151 +1042,151 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="more" href="javascript:void(0)">ПОСМОТРЕТЬ ЕЩЕ</a>
+                            <!-- <a class="more" href="javascript:void(0)">ПОСМОТРЕТЬ ЕЩЕ</a> -->
                         </div>
-                        <div id="tab-2">
-                            <div class="new-objects-slider">
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                        <!-- <div id="tab-2"> 
+                        <div class="new-objects-slider">
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img3.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="objects-item">
-                                        <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
-                                            <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
-                                        </div>
-                                        <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
-                                        <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
-                                        <div class="item-text">
-                                            <ul class="description">
-                                                <li><i class="icon-home"></i>Комнат: 1+2</li>
-                                                <li><i class="icon-area"></i>Площадь: 55 м2</li>
-                                            </ul>
-                                            <ul class="sum">
-                                                <li><i>50 000 $</i></li>
-                                                <li><strong>от 48 000 $</strong></li>
-                                                <li>1500 $/м2</li>
-                                            </ul>
-                                        </div>
-                                        <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
-                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
                                 </div>
                             </div>
-                            <a class="more" href="javascript:void(0)">ПОСМОТРЕТЬ ЕЩЕ</a>
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                                    </div>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img3.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                                    </div>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                                    </div>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img2.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                                    </div>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="objects-item">
+                                    <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
+                                        <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                        <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                        <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
+                                    </div>
+                                    <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
+                                    <h3><a href="javascript:void(0)">Название объекта в одну или две строчки</a></h3>
+                                    <div class="item-text">
+                                        <ul class="description">
+                                            <li><i class="icon-home"></i>Комнат: 1+2</li>
+                                            <li><i class="icon-area"></i>Площадь: 55 м2</li>
+                                        </ul>
+                                        <ul class="sum">
+                                            <li><i>50 000 $</i></li>
+                                            <li><strong>от 48 000 $</strong></li>
+                                            <li>1500 $/м2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="view-object" href="javascript:void(0)">посмотреть объект</a>
+                                </div>
+                            </div>
                         </div>
+                        <a class="more" href="javascript:void(0)">ПОСМОТРЕТЬ ЕЩЕ</a>
+                    </div> -->
                     </div>
                     <a class="help-estate estate_js" href="javascript:void(0)">помощь в подборе недвижимости</a>
                 </div>
@@ -1351,12 +1353,9 @@
                         <div class="filter">
                             <a class="filter-open" href="javascript:void(0)"><span>Вся недвижимость <i class="icon-arrow"></i></span></a>
                             <ul>
-                                <li><a href="javascript:void(0)">Вся недвижимость</a></li>
                                 <li class="active"><a href="javascript:void(0)">Квартиры</a></li>
-                                <li><a href="javascript:void(0)">Пентхаусы</a></li>
-                                <li><a href="javascript:void(0)">Земля на продажу</a></li>
+                                <li><a href="javascript:void(0)">Дуплексы</a></li>
                                 <li><a href="javascript:void(0)">Виллы и дома на побережье моря</a></li>
-                                <li><a href="javascript:void(0)">Офисы / магазины</a></li>
                             </ul>
                         </div>
                         <ul class="auxiliary">
@@ -1636,28 +1635,30 @@
                 <div class="news-slider">
                     <div>
                         <div class="news-item">
-                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void()"></a>
+                            </div>
                             <ul>
                                 <li>01.01.2020</li>
                                 <li><i class="icon-eye"></i>120</li>
                             </ul>
-                            <h3>«Подводные камни» при покупке жилья в Турции</h3>
+                            <h3><a href="javascript:void()">«Подводные камни» при покупке жилья в Турции</a></h3>
                             <article>
-                                <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                                 <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                             </article>
                         </div>
                     </div>
                     <div>
                         <div class="news-item">
-                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void()"></a>
+                            </div>
                             <ul>
                                 <li>01.01.2020</li>
                                 <li><i class="icon-eye"></i>120</li>
                             </ul>
-                            <h3>«Подводные камни» при покупке жилья в Турции</h3>
+                            <h3><a href="javascript:void()">«Подводные камни» при покупке жилья в Турции</a></h3>
                             <article>
-                                <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                                 <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                             </article>
                         </div>
@@ -1666,42 +1667,44 @@
                         <div class="news-item">
                             <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;">
                                 <span>Горячее предложение</span>
+                                <a href="javascript:void()"></a>
                             </div>
                             <ul>
                                 <li>01.01.2020</li>
                                 <li><i class="icon-eye"></i>120</li>
                             </ul>
-                            <h3>«Подводные камни» при покупке жилья в Турции</h3>
+                            <h3><a href="javascript:void()">«Подводные камни» при покупке жилья в Турции</a></h3>
                             <article>
-                                <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                                 <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                             </article>
                         </div>
                     </div>
                     <div>
                         <div class="news-item">
-                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void()"></a>
+                            </div>
                             <ul>
                                 <li>01.01.2020</li>
                                 <li><i class="icon-eye"></i>120</li>
                             </ul>
-                            <h3>«Подводные камни» при покупке жилья в Турции</h3>
+                            <h3><a href="javascript:void()">«Подводные камни» при покупке жилья в Турции</a></h3>
                             <article>
-                                <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                                 <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                             </article>
                         </div>
                     </div>
                     <div>
                         <div class="news-item">
-                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                            <div class="img" style="background: url('../img/news-img.jpg') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void()"></a>
+                            </div>
                             <ul>
                                 <li>01.01.2020</li>
                                 <li><i class="icon-eye"></i>120</li>
                             </ul>
-                            <h3>«Подводные камни» при покупке жилья в Турции</h3>
+                            <h3><a href="javascript:void()">«Подводные камни» при покупке жилья в Турции</a></h3>
                             <article>
-                                <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                                 <p>Покупка недвижимости в Турции выгодна, перспективна и в целом, имеет огромное количество плюсов. Однако, как и к любому серьезному делу, к покупке квартиры или виллы ...</p>
                             </article>
                         </div>

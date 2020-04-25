@@ -122,6 +122,19 @@ input[type="checkbox"]{
   }
 }
 
+.sold{
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: #ed3833;
+  font-size: 54px;
+  line-height: 70px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: 'GothamProBlack';
+  transform: translate(-50%, -50%) rotate(-40deg);
+}
+
 @media screen and (min-width: 768px) {
 
   .container{

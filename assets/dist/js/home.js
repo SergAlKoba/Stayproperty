@@ -114,9 +114,9 @@ $(document).ready(function(){
     ]
     });
 
-    $('.objectsTabs').responsiveTabs({
-      startCollapsed: 'accordion',
-    });
+    // $('.objectsTabs').responsiveTabs({
+    //   startCollapsed: 'accordion',
+    // });
 
     $('.r-tabs-anchor').on('click', function(){
       $('.new-objects-slider').get(0).slick.setPosition();
@@ -291,12 +291,16 @@ $(document).ready(function(){
     byRow: true
   });
 
-  $('.news-slider article').readmore({
-      speed: 175,
-      maxHeight: 155,
-      moreLink: '<a href="#">подробнее</a>',
-      lessLink: '<a href="#">cвернуть</a>'
+  $('.news-slider article').matchHeight({
+    byRow: true
   });
+
+  // $('.news-slider article').readmore({
+  //     speed: 175,
+  //     maxHeight: 155,
+  //     moreLink: '<a href="#">подробнее</a>',
+  //     lessLink: '<a href="#">cвернуть</a>'
+  // });
 
   $('.reviews-slider article').readmore({
       speed: 175,
@@ -329,12 +333,12 @@ $(document).ready(function(){
 
   if($(window).width() >= 1280){
 
-    $('.news-slider article').readmore({
-      speed: 175,
-      maxHeight: 120,
-      moreLink: '<a href="#">подробнее</a>',
-      lessLink: '<a href="#">cвернуть</a>'
-    });
+    // $('.news-slider article').readmore({
+    //   speed: 175,
+    //   maxHeight: 120,
+    //   moreLink: '<a href="#">подробнее</a>',
+    //   lessLink: '<a href="#">cвернуть</a>'
+    // });
 
   }
   

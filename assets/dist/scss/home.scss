@@ -687,7 +687,7 @@
         top: 9.3%;
         z-index: 0;
         width: 100%;
-        height: 71%;
+        height: 77%;
         position: absolute;
         background-color: #ededed;
     }
@@ -704,8 +704,7 @@
     .objectsTabs{
         .r-tabs-nav{
             li{
-                margin: 0 10px;
-                display: inline-block;
+                display: block;
                 &:first-child{
                     margin-left: 0;
                 }
@@ -729,19 +728,6 @@
             background-color: #ffffff;
             font-family: 'GothamProMedium';
             transition: all 0.5s;
-            &::after{
-                content: '';
-                left: 50%;
-                width: 0;
-                height: 0;
-                bottom: 10px;
-                position: absolute;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-top: 6px solid #282828;
-                transform: translate(-50%, 0);
-                transition: all 0.5s;
-            }
             &:hover{
                 color: #ffffff;
                 border: 1px solid #037db6;
@@ -2202,6 +2188,14 @@
                 height: 146px;
                 position: relative;
                 margin-bottom: 14px;
+                a{
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
                 span{
                     top: 0;
                     left: -13px;
@@ -2244,6 +2238,15 @@
                 line-height: 24px;
                 margin-bottom: 14px;
                 font-family: 'GothamProBold';
+                a{
+                    color: #000000;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    font-family: 'GothamProBold';
+                }
             }
             article{
                 margin-bottom: 8px;
@@ -2925,6 +2928,13 @@
             line-height: 140px;
         }
         .objectsTabs {
+            .r-tabs-nav {
+                text-align: center;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                }
+            }
             .r-tabs-panel {
                 .new-objects-slider {
                     margin-bottom: 38px;
@@ -3551,7 +3561,7 @@
             padding: 0;
             flex-wrap: wrap;
             display: flex;
-            margin: -40px -1% 0;
+            margin: 15px -1% 0;
             align-items: flex-end;
             &::after{
                 display: none;
@@ -4715,7 +4725,7 @@
             }
         }
         .offers-slider{
-            margin: -40px 10px 0;
+            margin: 15px 10px 0;
             .item{
                 &:first-child {
                     .offers-item {

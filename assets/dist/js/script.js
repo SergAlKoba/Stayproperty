@@ -9,10 +9,10 @@ $(document).ready(function(){
 
     $( "#slider-range" ).slider({
         range: true,
-        min: 0,
-        max: 30000,
+        min: 30000,
+        max: 1000000,
         step: 1000,
-        values: [ 2800, 25000 ],
+        values: [ 27000, 1000000 ],
         slide: function( event, ui ) {
           $( ".amount-left" ).text( ui.values[ 0 ] );
           $( ".amount-right" ).text( ui.values[ 1 ] );

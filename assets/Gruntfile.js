@@ -43,6 +43,7 @@ grunt.initConfig({
 				'../markup/js/catalog.min.js': ['dist/js/catalog.js'],
 				'../markup/js/searching-results.min.js': ['dist/js/searching-results.js'],
 				'../markup/js/internal-object.min.js': ['dist/js/internal-object.js'],
+				'../markup/js/news.min.js': ['dist/js/news.js'],
 			}
 		}
 	},
