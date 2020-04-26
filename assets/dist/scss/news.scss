@@ -619,139 +619,6 @@
     }
 }
 
-.feedback{
-    z-index: 3;
-    padding: 0 0 25px;
-    position: relative;
-    .title{
-        text-align: center;
-        margin-bottom: 24px;
-        padding: 44px 20px 42px;
-        h2{
-            color: #ffffff;
-            font-size: 28px;
-            line-height: 32px;
-            text-transform: uppercase;
-            font-family: 'GothamProBlack';
-        }
-    }
-    p{
-        color: #828282;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        margin: 0 -5px 22px;
-    }
-    form{
-        .input{
-            margin-bottom: 35px;
-            label{
-                color: #828282;
-                font-size: 14px;
-                line-height: 20px;
-                padding-bottom: 5px;
-                display: inline-block;
-                letter-spacing: -0.3px;
-            }
-            input{
-                width: 100%;
-                height: 36px;
-                border: none;
-                padding: 0 5px;
-                color: #828282;
-                font-size: 16px;
-                margin-bottom: 25px;
-                background: transparent;
-                font-family: 'GothamProLight';
-                border-bottom: 1px solid #b2b2b2;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-            }
-        } 
-        .textarea{
-            textarea{
-                width: 100%;
-                height: 234px;
-                resize: none;
-                font-size: 12px;
-                padding: 13px 14px;
-                color: #828282;
-                border-radius: 3px;
-                margin-bottom: 25px;
-                background: transparent;
-                border: 1px solid #b2b2b2;
-                font-family: 'GothamProLight';
-            }
-            .button{
-                width: 290px;
-                margin: 0 auto;
-                button{
-                    width: 290px;
-                    height: 67px;
-                    border: none;
-                    display: table;
-                    color: #ffffff;
-                    font-size: 12px;
-                    line-height: 26px;
-                    text-align: center;
-                    border-radius: 3px;
-                    margin: 0 auto 23px;
-                    letter-spacing: 1.2px;
-                    text-transform: uppercase;
-                    background-color: #ed1c24;
-                    font-family: 'GothamProMedium';
-                    &:hover{
-                        background-color: #be020a;
-                    }
-                }
-                label{
-                    display: block;
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: #828282;
-                    line-height: 15px;
-                    position: relative;
-                    padding-left: 27px;
-                    a{
-                        font-size: 12px;
-                        color: #828282;
-                        line-height: 16px;
-                        display: inline-block;
-                        letter-spacing: -0.3px;
-                        text-decoration: underline;
-                    }
-                    .jcf-checkbox{
-                        top: 0;
-                        left: 0;
-                        width: 16px;
-                        height: 16px;
-                        border-radius: 50%;
-                        position: absolute;
-                        background-color: #dcdcdc;
-                        span{
-                            top: 50%;
-                            left: 50%;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 50%;
-                            position: absolute;
-                            background-color: #0095da;
-                            transform: translate(-50%, -50%) scale(0);
-                            transition: all 0.5s;
-                        }
-                    }
-                    .jcf-checked{
-                        span{
-                            transform: translate(-50%, -50%) scale(1);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 .company{
     position: relative;
     padding: 20px 0 35px;
@@ -1077,17 +944,6 @@
         }
     }
 
-    .feedback{
-        .title{
-            padding: 60px 20px;
-            margin: 0 40px 24px;
-        }
-        p{
-            width: 600px;
-            margin: 0 auto 22px;
-        }
-    }
-
     .company {
         .title{
             margin-bottom: 25px;
@@ -1284,39 +1140,6 @@
                     position: absolute;
                     transform: translate(-50%, -50%);
                     transition: all 0.5s;
-                }
-            }
-        }
-    }
-
-    .feedback {
-        padding: 30px 0 50px;
-        .title {
-            margin: 0 30px 24px;
-            padding: 80px 20px;
-        }
-        p{
-            width: 700px;
-            margin: 0 auto 42px;
-        }
-        form{
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            .input{
-                width: 35%;
-                margin-bottom: 0;
-                input{
-                    height: 56px;
-                }
-            }
-            .textarea{
-                width: 60%;
-                textarea {
-                    height: 145px;
-                }
-                .button{
-                    margin: 0;
                 }
             }
         }
@@ -1538,56 +1361,6 @@
         }
     }
 
-    .feedback {
-        .title {
-            margin: 0 40px 38px;
-            padding: 90px 20px;
-        }
-        p {
-            width: 825px;
-            font-size: 18px;
-            line-height: 26px;
-            margin: 0 auto 73px;
-            letter-spacing: -0.1px;
-        }
-        form {
-            width: 1075px;
-            margin: 0 auto;
-            .input {
-                width: 31%;
-                label {
-                    font-size: 12px;
-                    line-height: 20px;
-                    letter-spacing: 0;
-                    padding-bottom: 10px;
-                }
-                input {
-                    height: 33px;
-                }
-            }
-            .textarea {
-                width: 60.7%;
-                textarea {
-                    height: 151px;
-                    padding: 22px 17px;
-                    margin-bottom: 30px;
-                }
-                .button {
-                    width: 335px;
-                    button {
-                        width: 335px;
-                        margin: 0 auto 15px;
-                    }
-                    label {
-                        a {
-                            display: inline;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     .company {
         padding: 35px 0 30px;
         .title {
@@ -1731,13 +1504,14 @@
     }
 
     .customer-news{
+        padding: 38px 0 100px;
         &::after {
             border-top: 820px solid transparent;
             border-left: 820px solid #ededed;
             border-bottom: 820px solid transparent;
         }
         .news-items{
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             .news-item {
                 padding: 21px 20px 17px;
                 .img {
@@ -1769,17 +1543,6 @@
             top: 52%;
             left: -33%;
             color: #ffffff;
-        }
-    }
-
-    .feedback {
-        padding: 65px 0 96px;
-        .title {
-            padding: 101px 20px;
-            h2 {
-                font-size: 32px;
-                line-height: 38px;
-            }
         }
     }
 
@@ -1868,12 +1631,6 @@
         }
     }
 
-    .feedback {
-        .title{
-            margin: 0 60px 38px;
-        }
-    }
-
     .company {
         .company-slider {
             .slick-arrow {
@@ -1899,12 +1656,6 @@
             left: -30%;
             font-size: 272px;
             line-height: 200px;
-        }
-    }
-
-    .feedback {
-        .title {
-            margin: 0 142px 38px;
         }
     }
 

@@ -125,8 +125,6 @@ $(document).ready(function(){
 
     }
 
-
-
     $('.construction-for').slick({
         dots: true,
         slidesToShow: 1,
