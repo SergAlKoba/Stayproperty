@@ -482,57 +482,92 @@
             font-family: 'GothamProBold';
         }
         .title-contact{
-            margin: 0 9px;
-            text-align: left;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            ul{
-                width: 170px;
-                li{
-                    margin-bottom: 5px;
-                    &:last-child{
-                        margin-bottom: 0;
-                    }
-                    a{
-                        color: #828282;
-                        font-size: 12px;
-                        line-height: 15px;
-                        padding-left: 31px;
-                        position: relative;
-                        display: inline-block;
-                        i{
-                            top: 0;
-                            left: 0;
-                            font-size: 20px;
-                            color: #0095da;
-                            position: absolute;
+            p {
+                color: #828282;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 18px;
+                font-family: 'GothamProMedium';
+            }
+            .choose-city {
+                width: 273px;
+                margin: 0 auto;
+                text-align: left;
+                border-radius: 3px;
+                border: 1px solid #d7d7d7;
+                background-color: #ffffff;
+                li {
+                    position: relative;
+                    padding: 24px 23px 20px;
+                    &:hover {
+                        a{
+                            &::after {
+                                transform: translate(0, -50%) rotate(90deg);
+                            }
+                        }
+                        ul {
+                            display: block;
                         }
                     }
-                }
-            }
-            .map{
-                width: 44px;
-                height: 32px;
-                border-radius: 3px;
-                position: relative;
-                border: 1px solid #0095da;
-                background-color: #0095da;
-                transition: all 0.5s;
-                &:hover{
-                    background-color: transparent;
-                    i{
-                        color: #0095da;
+                    a {
+                        display: block;
+                        color: #282828;
+                        font-size: 16px;
+                        overflow: hidden;
+                        line-height: 20px;
+                        position: relative;
+                        padding-right: 20px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        &::after {
+                            content: '\e801';
+                            top: 50%;
+                            right: 5px;
+                            color: #282828;
+                            font-size: 10px;
+                            line-height: 20px;
+                            position: absolute;
+                            font-family: 'fontello';
+                            transform: translate(0, -50%);
+                            transition: all 0.5s;
+                        }
                     }
-                }
-                i{
-                    top: 50%;
-                    left: 50%;
-                    font-size: 20px;
-                    color: #ffffff;
-                    position: absolute;
-                    transform: translate(-50%, -50%);
-                    transition: all 0.5s;
+                    ul {
+                        top: 64px;
+                        left: 50%;
+                        z-index: 3;
+                        width: 273px;
+                        display: none;
+                        padding: 10px 0;
+                        position: absolute;
+                        border-radius: 3px;
+                        border: 1px solid #d7d7d7;
+                        background-color: #ffffff;
+                        transform: translate(-50%, 0);
+                        li {
+                            padding: 5px 23px 5px;
+                            a {
+                                display: block;
+                                color: #282828;
+                                font-size: 16px;
+                                overflow: hidden;
+                                line-height: 20px;
+                                position: relative;
+                                padding-right: 20px;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                transition: all 0.5s;
+                                &::after{
+                                    display: none;
+                                }
+                                &:hover {
+                                    color: #0095da;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1296,15 +1331,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                ul{
-                    display: flex;
-                    margin-right: 35px;
-                    align-items: center;
-                    justify-content: flex-end;
-                    li{
-                        margin: 0 25px 0 0;
-                        &:last-child{
-                            margin: 0;
+                p {
+                    margin-bottom: 0;
+                    margin-right: 20px;
+                }
+                .choose-city {
+                    width: 194px;
+                    li {
+                        padding: 22px 15px 22px;
+                        ul {
+                            width: 194px;
                         }
                     }
                 }
@@ -1735,19 +1771,7 @@
         .title{
             margin-bottom: 53px;
             .title-contact {
-                ul {
-                    margin-right: 50px;
-                    li{
-                        margin: 0 30px 0 0;
-                        a{
-                            letter-spacing: 0.2px;
-                        }
-                    }
-                }
-                .map {
-                    width: 54px;
-                    height: 36px;
-                }
+                margin: 0;
             }
         }
         .office-slider {

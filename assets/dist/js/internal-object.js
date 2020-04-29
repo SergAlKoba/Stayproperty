@@ -169,7 +169,6 @@ $(document).ready(function(){
         $('.' + construction).get(0).slick.setPosition();
     });
 
-
     $('.youtube').on('click', function(){
         var dataVideo = $(this).data('video');
         $('.popup-video').addClass('active');

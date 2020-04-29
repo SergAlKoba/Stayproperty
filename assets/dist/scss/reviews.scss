@@ -2,7 +2,7 @@
 
 .popup-increase{
     .popup-content{
-        width: 215px;
+        width: 90%;
         img{
             width: 100%;
         }
@@ -1027,7 +1027,6 @@
 
     .popup-increase {
         .popup-content {
-            width: 415px;
             padding: 40px;
         }
     }
@@ -1225,6 +1224,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .popup-increase {
+        .popup-content {
+            width: 80%;
+        }
+    }
 
     .search-filter{
         padding: 150px 0 25px;
@@ -2030,6 +2035,12 @@
 }
 
 @media screen and (min-width: 1600px) {
+
+    .popup-increase {
+        .popup-content {
+            width: 60%;
+        }
+    }
 
     .search-filter{
         padding: 214px 0 25px;
