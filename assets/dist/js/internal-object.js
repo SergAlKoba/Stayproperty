@@ -91,8 +91,6 @@ $(document).ready(function(){
         asNavFor: '.presentation-slider',
         focusOnSelect: true
     });
-    
-
 
     var presentationFilter = $('.presentation-filter li.active').html();
     $('.presentation-filter .filter-title').html(presentationFilter);
@@ -162,12 +160,24 @@ $(document).ready(function(){
           ]
     });
 
-    $('.construction-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        var construction = $('.construction-nav .slick-center .nav-link').data('construction');
-        $('.construction-for').removeClass('active');
+    $('.nav-link').on('click', function(){
+        var construction = $(this).data('construction');
+        $('.construction-for').removeClass('active');    
         $('.' + construction).addClass('active');
         $('.' + construction).get(0).slick.setPosition();
     });
+
+    // var construction = $('.construction-nav .slick-center .nav-link').data('construction');
+    // $('.construction-for').removeClass('active');
+    // $('.' + construction).addClass('active');
+
+    // $('.construction-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //     console.log(0);
+    //     var construction = $('.construction-nav .slick-center .nav-link').data('construction');
+    //     $('.construction-for').removeClass('active');
+    //     $('.' + construction).addClass('active');
+    //     $('.' + construction).get(0).slick.setPosition();
+    // });
 
     $('.youtube').on('click', function(){
         var dataVideo = $(this).data('video');

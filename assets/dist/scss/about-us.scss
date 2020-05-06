@@ -365,6 +365,25 @@
                         background-color: #be020a;
                     }
                 }
+                input[type="submit"]{
+                    width: 260px;
+                    height: 67px;
+                    border: none;
+                    display: table;
+                    color: #ffffff;
+                    font-size: 12px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 3px;
+                    margin: 0 auto 0;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    background-color: #ed1c24;
+                    font-family: 'GothamProMedium';
+                    &:hover{
+                        background-color: #be020a;
+                    }
+                }
             }
         }
     }

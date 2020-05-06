@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function($){
 
     $('.office ul li ul').parent().addClass('drop');
     $('.currency-transfer li ul').parent().addClass('drop');
@@ -123,6 +123,72 @@ $(document).ready(function(){
         $(this).toggleClass('active');
       });
 
-      $('.phone').mask('+7 (000) 000 00 00', {placeholder: "+7(ххх) ххх-хх-хх"});
+      //$('.phone').mask('+7 (000) 000 00 00', {placeholder: "+7(ххх) ххх-хх-хх"});
+      
+  var listCountries = $.masksSort($.masksLoad("https://cdn.rawgit.com/andr-04/inputmask-multi/master/data/phone-codes.json"), ['#'], /[0-9]|#/, "mask");
+    var listRU = $.masksSort($.masksLoad("https://cdn.rawgit.com/andr-04/inputmask-multi/master/data/phones-ru.json"), ['#'], /[0-9]|#/, "mask");
+    var maskOpts = {
+        inputmask: {
+            definitions: {
+                '#': {
+                    validator: "[0-9]",
+                    cardinality: 1
+                }
+            },
+            showMaskOnHover: false,
+            autoUnmask: true,
+            clearMaskOnLostFocus: false
+        },
+        match: /[0-9]/,
+        replace: '#',
+        listKey: "mask"
+    };
+
+    var maskChangeWorld = function(maskObj, determined) {
+        if (determined) {
+            var hint = maskObj.name_ru;
+            if (maskObj.desc_ru && maskObj.desc_ru != "") {
+                hint += " (" + maskObj.desc_ru + ")";
+            }
+            $("#descr").html(hint);
+        } else {
+            $("#descr").html("Маска ввода");
+        }
+    }
+
+    var maskChangeRU = function(maskObj, determined) {
+        if (determined) {
+            if (maskObj.type != "mobile") {
+                $("#descr").html(maskObj.city.toString() + " (" + maskObj.region.toString() + ")");
+            } else {
+                $("#descr").html("мобильные");
+            }
+        } else {
+            $("#descr").html("Маска ввода");
+        }
+    }
+
+    $('#phone_mask, input[name="mode"]').change(function() {
+        if ($('#phone_mask').is(':checked')) {
+            $('.customer_phone').inputmask("remove");
+            if ($('#is_world').is(':checked')) {
+                $('.customer_phone').inputmasks($.extend(true, {}, maskOpts, {
+                    list: listCountries,
+                    onMaskChange: maskChangeWorld
+                }));
+            } else {
+                $('.customer_phone').inputmasks($.extend(true, {}, maskOpts, {
+                    list: listRU,
+                    onMaskChange: maskChangeRU
+                }));
+            }
+        } else {
+            $('.customer_phone').inputmasks("remove");
+            $('.customer_phone').inputmask("+#{*}", maskOpts.inputmask);
+            $("#descr").html("Маска ввода");
+        }
+    });
+
+    $('#phone_mask').change();
 
 });

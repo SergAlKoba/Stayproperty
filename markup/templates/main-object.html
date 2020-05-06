@@ -40,7 +40,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                         <label>Введите ваш E-mail</label>
                         <input type="text">
                     </div>
@@ -65,7 +65,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="button">
                         <button>ОТПРАВИТЬ</button>
@@ -88,7 +88,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="textarea">
                         <label>Введите коментарий</label>
@@ -115,7 +115,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="textarea">
                         <label>Введите ваш вопрос</label>
@@ -148,7 +148,7 @@
                         </div>
                         <div>
                             <label>Введите ваш телефон</label>
-                            <input type="text" class="phone">
+                            <input type="text" class="phone customer_phone">
                             <label>Предпологаемая дата инфо-тура</label>
                             <input type="text" placeholder="10.05.20">
                         </div>
@@ -216,7 +216,7 @@
                         </div>
                         <div>
                             <label>Введите ваш телефон</label>
-                            <input type="text" class="phone">
+                            <input type="text" class="phone customer_phone">
                             <label>Регион работы</label>
                             <input type="text">
                             <label>Введите ваш Сайт</label>
@@ -494,9 +494,6 @@
             </div>
         </div>
 
-
-
-        <!--  Имя, Название компании, Регион работы, Комментарий, Имейл, Телефон, Сайт. -->
 
         <section class="bread-crumbs">
             <div class="container">
@@ -1283,18 +1280,40 @@
                     </div>
                     <div class="description-form">
                         <h4>Получить консультацию от специалиста</h4>
-                        <form>
+                        <form action="/ru/property/white-sail-residence-mahmutlar/#wpcf7-f2148-o3" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="2148">
+                                <input type="hidden" name="_wpcf7_version" value="5.1.7">
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2148-o3">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                            </div>
                             <div class="input">
                                 <label>Введите ваше имя</label>
-                                <input type="text">
+                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
                                 <label>Введите ваш телефон</label>
-                                <input type="text" class="phone">
+                                <span class="wpcf7-form-control-wrap tel"><input type="tel" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel phone" aria-required="true" aria-invalid="false" placeholder="+7(ххх) ххх-хх-хх" maxlength="18"></span>
                             </div>
                             <div class="button">
-                                <button>получить предложение</button>
+                                <input type="submit" value="получить предложение" class="wpcf7-form-control wpcf7-submit" disabled=""><span class="ajax-loader"></span>
                                 <label>
-                                    <input type="checkbox"> Я даю согласие на обработку <a href="javascript:void(0)">персональных данных</a></label>
+                                    <span class="wpcf7-form-control-wrap accept-this">
+                                <span class="wpcf7-form-control wpcf7-acceptance">
+                                    <span class="wpcf7-list-item">
+                                        <input type="checkbox">
+                                    </span>
+                                    </span>
+                                    </span> Я даю согласие на обработку <a class="pp-privace" href="javascript:void(0)">персональных данных</a>
+                                </label>
+                                <span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance invert"><span class="wpcf7-list-item" style="display: none;"><span class="jcf-checkbox jcf-unchecked"><span></span>
+                                <input type="checkbox"
+                                name="agree" value="1" aria-invalid="false" checked="checked" class="antispam_check" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;">
+                                </span>
+                                </span>
+                                </span>
+                                </span>
                             </div>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
                         </form>
                     </div>
                 </div>
@@ -1477,7 +1496,7 @@
                             <label>Введите ваше имя</label>
                             <input type="text">
                             <label>Введите ваш телефон</label>
-                            <input type="text" class="phone">
+                            <input type="text" class="phone customer_phone">
                             <div class="input-select">
                                 <label>Сумма ипотеки</label>
                                 <input type="text">
@@ -1496,9 +1515,24 @@
                             <input type="text" placeholder="1 год">
                         </div>
                         <div class="button">
-                            <button>получить предложение</button>
+                            <input type="submit" value="получить предложение" class="wpcf7-form-control wpcf7-submit" disabled=""><span class="ajax-loader"></span>
                             <label>
-                                <input type="checkbox"> Я даю согласие на обработку <a href="javascript:void(0)">персональных данных</a></label>
+                                <span class="wpcf7-form-control-wrap accept-this">
+                                <span class="wpcf7-form-control wpcf7-acceptance">
+                                    <span class="wpcf7-list-item">
+                                        <input type="checkbox">
+                                    </span>
+                                </span>
+                                </span>
+                                Я даю согласие на обработку <a class="pp-privace" href="javascript:void(0)">персональных данных</a>
+                            </label>
+                            <span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance invert"><span class="wpcf7-list-item" style="display: none;"><span class="jcf-checkbox jcf-unchecked"><span></span>
+                            <input type="checkbox"
+                            name="agree" value="1" aria-invalid="false" checked="checked" class="antispam_check" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;">
+                            </span>
+                            </span>
+                            </span>
+                            </span>
                         </div>
                     </form>
                 </div>
@@ -1663,7 +1697,7 @@
                     <div class="construction4 construction-for">
                         <div>
                             <div class="slider-for">
-                                <div class="bg" style="background: url('../img/construction-for.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                                <div class="bg" style="background: url('../img/dom.jpg') no-repeat 50% 0; background-size: cover;"></div>
                             </div>
                         </div>
                         <div>
@@ -1727,7 +1761,7 @@
                     <div class="construction6 construction-for">
                         <div>
                             <div class="slider-for">
-                                <div class="bg" style="background: url('../img/construction-for.jpg') no-repeat 50% 0; background-size: cover;"></div>
+                                <div class="bg" style="background: url('../img/dom.jpg') no-repeat 50% 0; background-size: cover;"></div>
                             </div>
                         </div>
                         <div>
@@ -1851,7 +1885,7 @@
                                 <label>Введите ваше имя</label>
                                 <input type="text">
                                 <label>Введите ваш телефон</label>
-                                <input type="text" class="phone">
+                                <input type="text" class="phone customer_phone">
                                 <label>Введите вашу почту</label>
                                 <input type="text">
                             </div>
@@ -2323,10 +2357,23 @@
             </div>
         </footer>
 
+        <div class="demo" style="display: none;">
+            <input type="radio" name="mode" id="is_world" value="world" checked="">
+            <label for="is_world">Страны мира</label>
+            <span style="width: 20px; display: inline-block;"></span>
+            <input type="radio" name="mode" id="is_russia" value="ru">
+            <label for="is_russia">Города России</label>
+            <input type="text" class="customer_phone" value="7" size="25">
+            <br>
+            <input type="checkbox" id="phone_mask" checked="">
+            <label id="descr" for="phone_mask">Маска ввода</label>
+        </div>
+
     </section>
 
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jquery.inputmask.bundle.min.js"></script>
+    <script src="../js/jquery.inputmask-multi.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/jcf.min.js"></script>

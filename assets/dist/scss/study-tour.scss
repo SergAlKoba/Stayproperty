@@ -365,6 +365,25 @@
                         background-color: #be020a;
                     }
                 }
+                input[type="submit"]{
+                    width: 260px;
+                    height: 67px;
+                    border: none;
+                    display: table;
+                    color: #ffffff;
+                    font-size: 12px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 3px;
+                    margin: 0 auto 0;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    background-color: #ed1c24;
+                    font-family: 'GothamProMedium';
+                    &:hover{
+                        background-color: #be020a;
+                    }
+                }
             }
         }
     }
@@ -837,6 +856,25 @@
                     background-color: #be020a;
                 }
             }
+            input[type="submit"]{
+                width: 290px;
+                height: 67px;
+                border: none;
+                display: table;
+                color: #ffffff;
+                font-size: 12px;
+                line-height: 26px;
+                text-align: center;
+                border-radius: 3px;
+                margin: 0 auto 23px;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                background-color: #ed1c24;
+                font-family: 'GothamProMedium';
+                &:hover{
+                    background-color: #be020a;
+                }
+            }
             label{
                 display: block;
                 cursor: pointer;
@@ -845,6 +883,16 @@
                 line-height: 15px;
                 position: relative;
                 padding-left: 27px;
+                .wpcf7-form-control-wrap{
+                    display: block;
+                    position: relative;
+                    padding-left: 27px;
+                    .wpcf7-form-control{
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
                 a{
                     font-size: 12px;
                     color: #828282;
@@ -1283,6 +1331,9 @@
                 width: 100%;
                 text-align: center;
                 button {
+                    margin: 0 auto 12px;
+                }
+                input[type="submit"] {
                     margin: 0 auto 12px;
                 }
                 label{
@@ -2086,6 +2137,9 @@
             }
             .button {
                 button {
+                    width: 335px;
+                }
+                input[type="submit"] {
                     width: 335px;
                 }
             }

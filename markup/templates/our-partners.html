@@ -40,7 +40,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                         <label>Введите ваш E-mail</label>
                         <input type="text">
                     </div>
@@ -65,7 +65,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="button">
                         <button>ОТПРАВИТЬ</button>
@@ -88,7 +88,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="textarea">
                         <label>Введите коментарий</label>
@@ -115,7 +115,7 @@
                         <label>Введите ваше имя</label>
                         <input type="text">
                         <label>Введите ваш телефон</label>
-                        <input type="text" class="phone">
+                        <input type="text" class="phone customer_phone">
                     </div>
                     <div class="textarea">
                         <label>Введите ваш вопрос</label>
@@ -148,7 +148,7 @@
                         </div>
                         <div>
                             <label>Введите ваш телефон</label>
-                            <input type="text" class="phone">
+                            <input type="text" class="phone customer_phone">
                             <label>Предпологаемая дата инфо-тура</label>
                             <input type="text" placeholder="10.05.20">
                         </div>
@@ -216,7 +216,7 @@
                         </div>
                         <div>
                             <label>Введите ваш телефон</label>
-                            <input type="text" class="phone">
+                            <input type="text" class="phone customer_phone">
                             <label>Регион работы</label>
                             <input type="text">
                             <label>Введите ваш Сайт</label>
@@ -494,9 +494,6 @@
             </div>
         </div>
 
-
-
-        <!--  Имя, Название компании, Регион работы, Комментарий, Имейл, Телефон, Сайт. -->
 
         <section class="search-filter">
             <div class="container">
@@ -1220,10 +1217,23 @@
             </div>
         </footer>
 
+        <div class="demo" style="display: none;">
+            <input type="radio" name="mode" id="is_world" value="world" checked="">
+            <label for="is_world">Страны мира</label>
+            <span style="width: 20px; display: inline-block;"></span>
+            <input type="radio" name="mode" id="is_russia" value="ru">
+            <label for="is_russia">Города России</label>
+            <input type="text" class="customer_phone" value="7" size="25">
+            <br>
+            <input type="checkbox" id="phone_mask" checked="">
+            <label id="descr" for="phone_mask">Маска ввода</label>
+        </div>
+
     </section>
 
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jquery.inputmask.bundle.min.js"></script>
+    <script src="../js/jquery.inputmask-multi.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/jcf.min.js"></script>
