@@ -905,8 +905,8 @@
                                     <div class="objects-item">
                                         <div class="img" style="background: url('../img/objects-item-img1.jpg') 50% 50% no-repeat; background-size: cover;">
                                             <span class="sold">sold</span>
-                                            <a class="hurt" href="javascript:void(0)"><i class="icon-hurt"></i></a>
-                                            <a class="libra" href="javascript:void(0)"><i class="icon-libra"></i></a>
+                                            <a class="hurt active" href="javascript:void(0)"><i class="icon-hurt"></i></a>
+                                            <a class="libra active" href="javascript:void(0)"><i class="icon-libra"></i></a>
                                             <a class="youtube" data-video="https://www.youtube.com/embed/-BX1wZ5aqDw" href="javascript:void(0)"><i class="icon-youtube"></i></a>
                                         </div>
                                         <p><i class="icon-location"></i>Каргыджак, Алания <span>ID: З0001</span></p>
@@ -1914,9 +1914,24 @@
                             <li><a href="javascript:void()">Stay Management</a></li>
                             <li><a href="javascript:void()">Stay Rental</a></li>
                         </ul>
-                        <form>
+                        <form action="/ru/otzyvy/#wpcf7-f3201-p261-o7" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="3201">
+                                <br>
+                                <input type="hidden" name="_wpcf7_version" value="5.1.7">
+                                <br>
+                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                <br>
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3201-p261-o7">
+                                <br>
+                                <input type="hidden" name="_wpcf7_container_post" value="261">
+                            </div>
                             <h5>Новостная рассылка</h5>
-                            <input type="text" placeholder="Ваша почта">
+                            <p>
+                                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Ваша почта">
+                                <br>
+                                <input type="submit" value="Подписаться" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
                         </form>
                     </div>
                 </div>

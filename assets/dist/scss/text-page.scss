@@ -263,6 +263,16 @@
             }
         }
     }
+    .site-bar-content{
+        width: 100%;
+        display: none;
+    }
+}
+
+.text-page.site-bar{
+    .site-bar-content{
+        display: block;
+    }
 }
 
 .questions{
@@ -539,6 +549,48 @@
     }
 }
 
+.text-content h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 34px;
+    font-family: 'GothamProBold';
+    color: #282828;
+}
+.text-content h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 34px;
+    font-family: 'GothamProBold';
+    color: #282828;
+}
+.text-content h3 {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 34px;
+    font-family: 'GothamProBold';
+    color: #282828;
+}
+.text-content p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+    color: #282828;
+    font-weight: 300;
+    font-family: 'GothamProLight';
+}
+.text-content ul li {
+    margin-bottom: 5px;
+    list-style: square inside;
+    text-align: justify;
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #282828;
+    font-weight: 300;
+    font-family: 'GothamProLight';
+}
+
 @media screen and (min-width: 768px) {
 
     .text-img{
@@ -584,6 +636,19 @@
                     }
                 }
             }
+        }
+    }
+
+    .text-page.site-bar{
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .text-content {
+            width: 70%;
+        }
+        .site-bar-content{
+            width: 28%;
         }
     }
 
@@ -876,6 +941,23 @@
         }
     }
 
+    .text-page.site-bar{
+        .procedure-item {
+            margin: 0 30px 30px 80px;
+            .list-column {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 20px;
+                -moz-column-gap: 20px;
+                column-gap: 20px;
+                li {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -1023,6 +1105,20 @@
                 .slick-arrow {
                     background-color: #ffffff;
                 }
+            }
+        }
+    }
+
+    .text-page.site-bar{
+        .procedure-item {
+            margin: 0 40px 96px 125px;
+            .list-column {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 15px;
+                -moz-column-gap: 15px;
+                column-gap: 15px;
             }
         }
     }

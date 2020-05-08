@@ -716,6 +716,20 @@
                                     background-color: #037db6;
                                 }
                             }
+                            .hurt.active{
+                                .icon-hurt{
+                                    &:before {
+                                        content: '\E829';
+                                    }
+                                }
+                            }
+                            .libra.active{
+                                .icon-libra{
+                                    &:before {
+                                        content: '\E82A';
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1631,6 +1645,20 @@
                             background-color: #037db6;
                         }
                     }
+                    .hurt.active{
+                        .icon-hurt{
+                            &:before {
+                                content: '\E829';
+                            }
+                        }
+                    }
+                    .libra.active{
+                        .icon-libra{
+                            &:before {
+                                content: '\E82A';
+                            }
+                        }
+                    }
                     .youtube{
                         right: 10px;
                         bottom: -14px;
@@ -2496,6 +2524,20 @@
                         &:hover{
                             i{
                                 background-color: #037db6;
+                            }
+                        }
+                    }
+                    .hurt.active{
+                        .icon-hurt{
+                            &:before {
+                                content: '\E829';
+                            }
+                        }
+                    }
+                    .libra.active{
+                        .icon-libra{
+                            &:before {
+                                content: '\E82A';
                             }
                         }
                     }

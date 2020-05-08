@@ -645,6 +645,11 @@
                 }
             }
         }
+        .customer-item.none{
+            .img {
+                height: 0;
+            }
+        }
         .slick-arrow{
             bottom: 0;
             z-index: 3;
@@ -1182,6 +1187,9 @@
                     }
                 }
             }
+            .customer-item.none{
+                padding: 35px;
+            }
             .slick-arrow {
                 top: 50%;
                 bottom: initial;
@@ -1702,6 +1710,9 @@
                         font-size: 12px;
                     }
                 }
+            }
+            .customer-item.none{
+                padding: 33px 83px 33px 83px;
             }
         }
     }

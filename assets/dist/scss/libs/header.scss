@@ -531,11 +531,15 @@
                     text-align: left;
                     line-height: 15px;
                     position: relative;
-                    padding-left: 27px;
                     .wpcf7-form-control{
-                        top: 0;
-                        left: 0;
-                        position: absolute;
+                        display: block;
+                        padding-left: 27px;
+                        position: relative;
+                        .wpcf7-form-control{
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
                     }
                     a{
                         font-size: 12px;
@@ -707,11 +711,15 @@
                     text-align: left;
                     line-height: 15px;
                     position: relative;
-                    padding-left: 27px;
                     .wpcf7-form-control{
-                        top: 0;
-                        left: 0;
-                        position: absolute;
+                        display: block;
+                        padding-left: 27px;
+                        position: relative;
+                        .wpcf7-form-control{
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
                     }
                     a{
                         font-size: 12px;
@@ -883,11 +891,15 @@
                     text-align: left;
                     line-height: 15px;
                     position: relative;
-                    padding-left: 27px;
                     .wpcf7-form-control{
-                        top: 0;
-                        left: 0;
-                        position: absolute;
+                        display: block;
+                        padding-left: 27px;
+                        position: relative;
+                        .wpcf7-form-control{
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
                     }
                     a{
                         font-size: 12px;
@@ -1235,11 +1247,15 @@
                     text-align: left;
                     line-height: 15px;
                     position: relative;
-                    padding-left: 27px;
                     .wpcf7-form-control{
-                        top: 0;
-                        left: 0;
-                        position: absolute;
+                        display: block;
+                        padding-left: 27px;
+                        position: relative;
+                        .wpcf7-form-control{
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
                     }
                     a{
                         font-size: 12px;
