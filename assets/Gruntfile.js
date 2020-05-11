@@ -47,6 +47,7 @@ grunt.initConfig({
 				'../markup/js/internal-object.min.js': ['dist/js/internal-object.js'],
 				'../markup/js/news.min.js': ['dist/js/news.js'],
 				'../markup/js/text-page.min.js': ['dist/js/text-page.js'],
+				'../markup/js/libra.min.js': ['dist/js/libra.js'],
 			}
 		}
 	},

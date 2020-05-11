@@ -641,6 +641,18 @@
                     &:first-child{
                         width: 200px;
                     }
+                    .srav_yes{
+                        i{
+                            color: #1fed1c;
+                            font-size: 22px;
+                        }
+                    }
+                    .srav_no{
+                        i{
+                            color: #ed1c24;
+                            font-size: 20px;
+                        }
+                    }
                 }
                 &:nth-child(odd){
                     background: #f5f5f5;

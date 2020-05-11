@@ -1135,6 +1135,25 @@
                         background-color: #be020a;
                     }
                 }
+                input[type="submit"]{
+                    width: 290px;
+                    height: 67px;
+                    border: none;
+                    display: table;
+                    color: #ffffff;
+                    font-size: 12px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 3px;
+                    margin: 0 auto 23px;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    background-color: #0095da;
+                    font-family: 'GothamProMedium';
+                    &:hover{
+                        background-color: #037db6;
+                    }
+                }
                 label{
                     display: block;
                     cursor: pointer;
@@ -1143,6 +1162,11 @@
                     line-height: 15px;
                     position: relative;
                     padding-left: 27px;
+                    .wpcf7-form-control{
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
                     a{
                         font-size: 12px;
                         color: #828282;
@@ -1436,9 +1460,6 @@
                     background: transparent;
                     font-family: 'GothamProLight';
                     border-bottom: 1px solid #b2b2b2;
-                    &:last-child{
-                        margin-bottom: 0;
-                    }
                 }
             } 
             .textarea{
@@ -5233,6 +5254,9 @@
                     button{
                         width: 100%;
                     }
+                    input[type="submit"]{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -5924,6 +5948,9 @@
                 }
                 .button {
                     button {
+                        margin: 0 auto 16px;
+                    }
+                    input[type="submit"] {
                         margin: 0 auto 16px;
                     }
                 }

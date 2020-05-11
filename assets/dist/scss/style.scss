@@ -135,6 +135,37 @@ input[type="checkbox"]{
   transform: translate(-50%, -50%) rotate(-40deg);
 }
 
+input.error {
+  border-bottom: 1px solid #ed1c24 !important;
+}
+
+textarea.error {
+  border: 1px solid #ed1c24 !important;
+}
+
+.preloader{
+  top: 0;
+    left: 50%;
+    z-index: 6;
+    width: 109%;
+    height: 103%;
+    display: none;
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    transform: translate(-50%, 0);
+  img{
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.preloader.active{
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
 
   .container{
