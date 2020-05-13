@@ -22,6 +22,7 @@ grunt.initConfig({
 			files: {
 				'../markup/js/jquery.min.js': ['dist/js/plugin/jquery.js'],
 				'../markup/js/jquery-ui.min.js': ['dist/js/plugin/jquery-ui.js'],
+				'../markup/js/ion.rangeSlider.min.js': ['dist/js/plugin/ion.rangeSlider.js'],
 				'../markup/js/jquery.inputmask.bundle.min.js': ['dist/js/plugin/jquery.inputmask.bundle.js'],
 				'../markup/js/jquery.inputmask-multi.min.js': ['dist/js/plugin/jquery.inputmask-multi.js'],
 				'../markup/js/jquery.mCustomScrollbar.min.js': ['dist/js/plugin/jquery.mCustomScrollbar.js'],

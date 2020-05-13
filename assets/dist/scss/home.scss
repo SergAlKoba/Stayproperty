@@ -1547,6 +1547,9 @@
                         padding-right: 16px;
                         display: inline-block;
                         letter-spacing: -0.4px;
+                        b{
+                            font-weight: 400;
+                        }
                         i{
                             top: 50%;
                             right: 0;
@@ -1559,6 +1562,27 @@
                 }
                 ul{
                     display: none;
+                }
+                ul.active{
+                    padding: 20px;
+                    display: block;
+                    border: 1px solid #d7d7d7;
+                    li{
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    li.active{
+                        a{
+                            color: #0095da;
+                        }
+                    }
+                    a{
+                        color: #282828;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                 }
             }
             .auxiliary{

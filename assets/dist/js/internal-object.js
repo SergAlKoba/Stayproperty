@@ -38,11 +38,13 @@ $(document).ready(function(){
     });
 
     $('.main-specifications .tabs-link li').on('click', function(){
+        console.log(0);
         var mainSpecificationsTab = $(this).data('tab');
         $('.main-specifications .tabs-link li').removeClass('active');
         $(this).addClass('active');
         $('.main-specifications .tabs-item').removeClass('active');
         $('.' + mainSpecificationsTab).addClass('active');
+        $('.specifications-slider').get(0).slick.setPosition();
     });
 
     $('.properties-slider').slick({
@@ -100,7 +102,6 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('.presentation-filter .filter-title').html($(this).html());
         $('.presentation-filter ul').removeClass('open');
-        $('.specifications-slider').get(0).slick.setPosition();
     });
 
     $('.presentation-filter .filter-title').on('click', function(){
