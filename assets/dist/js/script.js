@@ -159,55 +159,55 @@ $(document).ready(function($){
 
     $('#phone_mask').change();
 
-    $("#example_id").ionRangeSlider({
-      type: "double",
-      step: 500,
-      min: 30000,
-      max: 1000000,
-      from: 37000,
-      to: 900000,
-      onStart: function (data) {
-        $('.js-irs-0 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-0 .irs-to').attr('data-irs-to', data.to);
-      },
-      onChange: function (data) {
-        $('.js-irs-0 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-0 .irs-to').attr('data-irs-to', data.to);
-      }
-    });
+    // $("#example_id").ionRangeSlider({
+    //   type: "double",
+    //   step: 500,
+    //   min: 30000,
+    //   max: 1000000,
+    //   from: 37000,
+    //   to: 900000,
+    //   onStart: function (data) {
+    //     $('.js-irs-0 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-0 .irs-to').attr('data-irs-to', data.to);
+    //   },
+    //   onChange: function (data) {
+    //     $('.js-irs-0 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-0 .irs-to').attr('data-irs-to', data.to);
+    //   }
+    // });
 
-    $("#example_id2").ionRangeSlider({
-      type: "double",
-      step: 1,
-      min: 0,
-      max: 600,
-      from: 100,
-      to: 500,
-      onStart: function (data) {
-        $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
-      },
-      onChange: function (data) {
-        $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
-      }
-    });
+    // $("#example_id2").ionRangeSlider({
+    //   type: "double",
+    //   step: 1,
+    //   min: 0,
+    //   max: 600,
+    //   from: 100,
+    //   to: 500,
+    //   onStart: function (data) {
+    //     $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
+    //   },
+    //   onChange: function (data) {
+    //     $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
+    //   }
+    // });
 
-    $("#example_id3").ionRangeSlider({
-      type: "double",
-      step: 1,
-      min: 0,
-      max: 150,
-      from: 23,
-      to: 120,
-      onStart: function (data) {
-        $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
-      },
-      onChange: function (data) {
-        $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
-        $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
-      }
-    });
+    // $("#example_id3").ionRangeSlider({
+    //   type: "double",
+    //   step: 1,
+    //   min: 0,
+    //   max: 150,
+    //   from: 23,
+    //   to: 120,
+    //   onStart: function (data) {
+    //     $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
+    //   },
+    //   onChange: function (data) {
+    //     $('.js-irs-1 .irs-from').attr('data-irs-from', data.from);
+    //     $('.js-irs-1 .irs-to').attr('data-irs-to', data.to);
+    //   }
+    // });
 
 });
