@@ -391,36 +391,17 @@
             line-height: 26px;
         }
     }
-    .table-body{
-        width: 100%;
-        overflow-x: scroll;
+    .table{
+        overflow-x: auto;
         overflow-y: hidden;
-        position: relative;
-        .fix{
-            top: 0;
-            left: 0;
-            overflow-y: hidden;
-            position: absolute;
-        }
-        .main-table{
-            thead{
-                height: 0;
-                display: none;
-                overflow: hidden;
-            }
-        }
-    }
-    .table-scroll{
-        width: 1250px;
-        height: 400px;
-        overflow-y: scroll;
-        overflow-x: scroll;
     }
     table{
         width: auto;
         border: none;
         margin: 0 auto;
+        overflow-x: auto;
         min-width: 1250px;
+        overflow-y: hidden;
         border-collapse: collapse;
         .objects-item{
             text-align: left;
