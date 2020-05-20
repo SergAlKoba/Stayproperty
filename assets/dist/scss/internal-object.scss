@@ -1930,6 +1930,7 @@
         svg{
             width: 100%;
             .floor{
+                display: none;
                 cursor: pointer;
                 position: relative;
                 transition: all 0.5s;
@@ -4114,6 +4115,11 @@
         }
         .main-svg{
             margin: 0 -6% 30px;   
+            svg {
+                .floor {
+                    display: block;
+                }
+            }
         }
         .print-share {
             .forward-mobile{
